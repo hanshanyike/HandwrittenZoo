@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from fine_tuning.lora import LoRALayer, LinearWithLoRA
-from fine_tuning.qlora import QLoRALayer, LinearWithQLoRA
-from fine_tuning.prefix_tuning import (
+from fine_tuning.lora.lora import LoRALayer, LinearWithLoRA
+from fine_tuning.qlora.qlora import QLoRALayer, LinearWithQLoRA
+from fine_tuning.prefix_tuning.prefix_tuning import (
     PrefixEmbedding,
     PrefixTuningMLP,
     PrefixTuningAttention,

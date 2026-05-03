@@ -6,12 +6,12 @@
 
 | 文件 | 说明 |
 |------|------|
-| [lora.py](lora.py) | LoRA 低秩适配实现（可注入、可合并） |
-| [lora.md](lora.md) | LoRA 算法详解、面试高频考点 |
-| [qlora.py](qlora.py) | QLoRA 4-bit 量化 + LoRA（含双量化、分页优化器概念） |
-| [qlora.md](qlora.md) | QLoRA 显存优化原理、NF4 量化、工程实践 |
-| [prefix_tuning.py](prefix_tuning.py) | Prefix Tuning 前缀微调（含 MLP 重参数化） |
-| [prefix_tuning.md](prefix_tuning.md) | Prefix Tuning 注意力干预机制、与 Prompt Tuning 对比 |
+| [lora.py](lora/lora.py) | LoRA 低秩适配实现（可注入、可合并） |
+| [lora.md](lora/lora.md) | LoRA 算法详解、面试高频考点 |
+| [qlora.py](qlora/qlora.py) | QLoRA 4-bit 量化 + LoRA（含双量化、分页优化器概念） |
+| [qlora.md](qlora/qlora.md) | QLoRA 显存优化原理、NF4 量化、工程实践 |
+| [prefix_tuning.py](prefix_tuning/prefix_tuning.py) | Prefix Tuning 前缀微调（含 MLP 重参数化） |
+| [prefix_tuning.md](prefix_tuning/prefix_tuning.md) | Prefix Tuning 注意力干预机制、与 Prompt Tuning 对比 |
 
 ## 核心概念速查
 
@@ -47,7 +47,7 @@
 
 ```bash
 cd d:\Code\Python_Workplace\HandwrittenZoo\fine_tuning
-python lora.py
-python qlora.py
-python prefix_tuning.py
+python lora/lora.py
+python qlora/qlora.py
+python prefix_tuning/prefix_tuning.py
 ```

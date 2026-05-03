@@ -68,7 +68,7 @@ pip install -r requirements.txt
 python transformer/transformer_full.py
 
 # 例如运行 RoPE 位置编码
-python position_encoding/rope.py
+python position_encoding/rope/rope.py
 ```
 
 ### 运行测试

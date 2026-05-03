@@ -4,15 +4,15 @@
 
 ## 文件清单
 
-| 文件 | 说明 |
+| 目录 | 说明 |
 |------|------|
-| `multi_head_attention.py` + `.md` | 标准多头注意力（MHA），Transformer 原始设计 |
-| `multi_query_attention.py` + `.md` | 多查询注意力（MQA），共享 K/V 压缩 Cache |
-| `grouped_query_attention.py` + `.md` | 分组查询注意力（GQA），MHA 与 MQA 的折中 |
-| `multi_head_latent_attention.py` + `.md` | 多头潜在注意力（MLA），DeepSeek 核心创新 |
-| `flash_attention.py` + `.md` | 简化版 FlashAttention（分块 + 在线 softmax）|
-| `self_attention.py` + `.md` | 自注意力独立模块 |
-| `cross_attention.py` + `.md` | 交叉注意力独立模块 |
+| `multi_head_attention/` | 标准多头注意力（MHA），Transformer 原始设计 |
+| `multi_query_attention/` | 多查询注意力（MQA），共享 K/V 压缩 Cache |
+| `grouped_query_attention/` | 分组查询注意力（GQA），MHA 与 MQA 的折中 |
+| `multi_head_latent_attention/` | 多头潜在注意力（MLA），DeepSeek 核心创新 |
+| `flash_attention/` | 简化版 FlashAttention（分块 + 在线 softmax）|
+| `self_attention/` | 自注意力独立模块 |
+| `cross_attention/` | 交叉注意力独立模块 |
 
 ## 演进路线
 
@@ -56,13 +56,13 @@ MHA (2017)
 每个 `.py` 文件底部都包含 `if __name__ == "__main__":` 自测块，可直接运行：
 
 ```bash
-python attention/multi_head_attention.py
-python attention/multi_query_attention.py
-python attention/grouped_query_attention.py
-python attention/multi_head_latent_attention.py
-python attention/flash_attention.py
-python attention/self_attention.py
-python attention/cross_attention.py
+python attention/multi_head_attention/multi_head_attention.py
+python attention/multi_query_attention/multi_query_attention.py
+python attention/grouped_query_attention/grouped_query_attention.py
+python attention/multi_head_latent_attention/multi_head_latent_attention.py
+python attention/flash_attention/flash_attention.py
+python attention/self_attention/self_attention.py
+python attention/cross_attention/cross_attention.py
 ```
 
 ## 参考资料汇总

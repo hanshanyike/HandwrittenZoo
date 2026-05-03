@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from rnn.lstm import LSTMCell, LSTM
-from rnn.gru import GRUCell, GRU
-from rnn.bilstm import BiLSTM
+from rnn.lstm.lstm import LSTMCell, LSTM
+from rnn.gru.gru import GRUCell, GRU
+from rnn.bilstm.bilstm import BiLSTM
 
 
 class TestLSTMCell:

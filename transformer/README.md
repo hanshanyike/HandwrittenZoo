@@ -8,9 +8,9 @@
 
 | 文件 | 内容 | 面试重点 |
 |------|------|----------|
-| `transformer_full.py` + `.md` | 完整 Encoder-Decoder Transformer | Attention 计算、Mask 机制、参数量估算 |
-| `bert.py` + `.md` | BERT（Encoder-Only + MLM/NSP） | 双向表示、MLM 策略、预训练 vs 微调 |
-| `decoder_only.py` + `.md` | GPT/LLaMA 风格 Decoder-Only | Pre-Norm、RMSNorm、RoPE、SwiGLU、GQA |
+| `transformer_full/transformer_full.py` + `.md` | 完整 Encoder-Decoder Transformer | Attention 计算、Mask 机制、参数量估算 |
+| `bert/bert.py` + `.md` | BERT（Encoder-Only + MLM/NSP） | 双向表示、MLM 策略、预训练 vs 微调 |
+| `decoder_only/decoder_only.py` + `.md` | GPT/LLaMA 风格 Decoder-Only | Pre-Norm、RMSNorm、RoPE、SwiGLU、GQA |
 
 ---
 
@@ -80,9 +80,9 @@ LLaMA (2023)
 
 ## 学习路线建议
 
-1. **入门**：先阅读 `transformer_full.md`，理解 Attention、Mask、残差连接的数学原理。
-2. **进阶**：学习 `bert.md`，掌握 MLM 的 80/10/10 策略和双向表示的意义。
-3. **前沿**：精读 `decoder_only.md`，这是 2024-2025 面试的核心战场，Pre-Norm/RMSNorm/RoPE/SwiGLU/GQA 几乎必考。
+1. **入门**：先阅读 `transformer_full/transformer_full.md`，理解 Attention、Mask、残差连接的数学原理。
+2. **进阶**：学习 `bert/bert.md`，掌握 MLM 的 80/10/10 策略和双向表示的意义。
+3. **前沿**：精读 `decoder_only/decoder_only.md`，这是 2024-2025 面试的核心战场，Pre-Norm/RMSNorm/RoPE/SwiGLU/GQA 几乎必考。
 4. **实战**：运行三个 `.py` 文件的 `__main__` 自测块，观察输出 shape 和 loss 变化。
 
 ---

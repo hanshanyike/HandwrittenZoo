@@ -6,12 +6,12 @@
 
 | 文件 | 说明 |
 |------|------|
-| [moe_layer.py](moe_layer.py) | 稀疏门控 MoE 层（Top-K 专家选择） |
-| [moe_layer.md](moe_layer.md) | MoE 层算法详解、面试考点 |
-| [load_balance.py](load_balance.py) | 负载均衡损失（Switch Transformer 风格 + Aux-Loss-Free） |
-| [load_balance.md](load_balance.md) | 负载均衡原理、数学公式、工程实践 |
-| [switch_transformer.py](switch_transformer.py) | Switch Transformer 完整实现（Top-1 + Capacity Factor） |
-| [switch_transformer.md](switch_transformer.md) | Switch Transformer 论文解读、面试高频问题 |
+| [moe_layer.py](moe_layer/moe_layer.py) | 稀疏门控 MoE 层（Top-K 专家选择） |
+| [moe_layer.md](moe_layer/moe_layer.md) | MoE 层算法详解、面试考点 |
+| [load_balance.py](load_balance/load_balance.py) | 负载均衡损失（Switch Transformer 风格 + Aux-Loss-Free） |
+| [load_balance.md](load_balance/load_balance.md) | 负载均衡原理、数学公式、工程实践 |
+| [switch_transformer.py](switch_transformer/switch_transformer.py) | Switch Transformer 完整实现（Top-1 + Capacity Factor） |
+| [switch_transformer.md](switch_transformer/switch_transformer.md) | Switch Transformer 论文解读、面试高频问题 |
 
 ## 核心概念速查
 
@@ -40,7 +40,7 @@
 
 ```bash
 cd d:\Code\Python_Workplace\HandwrittenZoo\moe
-python moe_layer.py
-python load_balance.py
-python switch_transformer.py
+python moe_layer/moe_layer.py
+python load_balance/load_balance.py
+python switch_transformer/switch_transformer.py
 ```

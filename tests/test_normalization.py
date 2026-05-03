@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from normalization.layer_norm import LayerNorm
-from normalization.rms_norm import RMSNorm
-from normalization.batch_norm import BatchNorm
+from normalization.layer_norm.layer_norm import LayerNorm
+from normalization.rms_norm.rms_norm import RMSNorm
+from normalization.batch_norm.batch_norm import BatchNorm
 
 
 class TestLayerNorm:

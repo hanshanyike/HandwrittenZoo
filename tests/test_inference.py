@@ -10,13 +10,13 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from inference_optimization.kv_cache import KVCache, CachedMultiHeadAttention
-from inference_optimization.page_attention import (
+from inference_optimization.kv_cache.kv_cache import KVCache, CachedMultiHeadAttention
+from inference_optimization.page_attention.page_attention import (
     BlockAllocator,
     PagedKVCache,
     PagedAttentionLayer,
 )
-from inference_optimization.quantization import (
+from inference_optimization.quantization.quantization import (
     symmetric_quantize,
     symmetric_dequantize,
     asymmetric_quantize,

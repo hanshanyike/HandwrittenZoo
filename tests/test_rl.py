@@ -10,10 +10,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from rl.ppo import PPOAgent, ActorCritic
-from rl.dpo import DPOTrainer
-from rl.grpo import GRPOTrainer
-from rl.reward_model import RewardModel
+from rl.ppo.ppo import PPOAgent, ActorCritic
+from rl.dpo.dpo import DPOTrainer
+from rl.grpo.grpo import GRPOTrainer
+from rl.reward_model.reward_model import RewardModel
 
 
 class TestActorCritic:

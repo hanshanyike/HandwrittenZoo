@@ -9,9 +9,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 import pytest
 
-from tokenization.bpe import BPETokenizer
-from tokenization.wordpiece import WordPieceTokenizer
-from tokenization.sentencepiece import SentencePieceTokenizer
+from tokenization.bpe.bpe import BPETokenizer
+from tokenization.wordpiece.wordpiece import WordPieceTokenizer
+from tokenization.sentencepiece.sentencepiece import SentencePieceTokenizer
 
 
 class TestBPE:

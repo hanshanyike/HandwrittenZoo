@@ -6,9 +6,9 @@
 
 | 文件 | 说明 | 面试频率 |
 |------|------|----------|
-| [lstm.py](lstm.py) + [lstm.md](lstm.md) | LSTM 长短期记忆网络（三门控机制） | 极高 |
-| [gru.py](gru.py) + [gru.md](gru.md) | GRU 门控循环单元（两门控简化版） | 高 |
-| [bilstm.py](bilstm.py) + [bilstm.md](bilstm.md) | BiLSTM 双向 LSTM（前后文编码） | 极高 |
+| [lstm.py](lstm/lstm.py) + [lstm.md](lstm/lstm.md) | LSTM 长短期记忆网络（三门控机制） | 极高 |
+| [gru.py](gru/gru.py) + [gru.md](gru/gru.md) | GRU 门控循环单元（两门控简化版） | 高 |
+| [bilstm.py](bilstm/bilstm.py) + [bilstm.md](bilstm/bilstm.md) | BiLSTM 双向 LSTM（前后文编码） | 极高 |
 
 ## 架构演进脉络
 
@@ -37,9 +37,9 @@ RNN (1986) → LSTM (1997) → GRU (2014) → BiLSTM (1997/2013) → Transformer
 ## 快速开始
 
 ```python
-from rnn.lstm import LSTM
-from rnn.gru import GRU
-from rnn.bilstm import BiLSTM, BiLSTMClassifier
+from rnn.lstm.lstm import LSTM
+from rnn.gru.gru import GRU
+from rnn.bilstm.bilstm import BiLSTM, BiLSTMClassifier
 
 # LSTM
 lstm = LSTM(input_size=128, hidden_size=256, num_layers=2, output_size=10)

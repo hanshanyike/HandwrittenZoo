@@ -6,8 +6,8 @@
 
 | 文件 | 说明 | 面试频率 |
 |------|------|----------|
-| [resnet.py](resnet.py) + [resnet.md](resnet.md) | ResNet 残差网络（跳跃连接） | 极高 |
-| [vgg.py](vgg.py) + [vgg.md](vgg.md) | VGG 网络（小卷积核深度堆叠） | 高 |
+| [resnet.py](resnet/resnet.py) + [resnet.md](resnet/resnet.md) | ResNet 残差网络（跳跃连接） | 极高 |
+| [vgg.py](vgg/vgg.py) + [vgg.md](vgg/vgg.md) | VGG 网络（小卷积核深度堆叠） | 高 |
 
 ## 架构演进脉络
 
@@ -31,8 +31,8 @@ LeNet (1998) → AlexNet (2012) → VGG (2014) → ResNet (2015) → DenseNet / 
 ## 快速开始
 
 ```python
-from cnn.resnet import resnet18, resnet50
-from cnn.vgg import vgg16
+from cnn.resnet.resnet import resnet18, resnet50
+from cnn.vgg.vgg import vgg16
 
 # 创建模型
 model = resnet50(num_classes=10)

@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from generative_model.vae import VAE
-from generative_model.gan import Generator, Discriminator, GAN
-from generative_model.diffusion import DiffusionModel, UNet
+from generative_model.vae.vae import VAE
+from generative_model.gan.gan import Generator, Discriminator, GAN
+from generative_model.diffusion.diffusion import DiffusionModel, UNet
 
 
 class TestVAE:

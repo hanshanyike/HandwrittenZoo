@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from moe.moe_layer import MoELayer
-from moe.load_balance import LoadBalancingLoss
-from moe.switch_transformer import SwitchTransformerLayer, SwitchTransformer
+from moe.moe_layer.moe_layer import MoELayer
+from moe.load_balance.load_balance import LoadBalancingLoss
+from moe.switch_transformer.switch_transformer import SwitchTransformerLayer, SwitchTransformer
 
 
 class TestMoELayer:

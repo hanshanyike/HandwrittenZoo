@@ -10,10 +10,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from position_encoding.sinusoidal import SinusoidalPositionEncoding
-from position_encoding.rope import RotaryPositionEmbedding, apply_rotary_pos_emb
-from position_encoding.alibi import ALiBiPositionBias
-from position_encoding.learnable import LearnablePositionEncoding
+from position_encoding.sinusoidal.sinusoidal import SinusoidalPositionEncoding
+from position_encoding.rope.rope import RotaryPositionEmbedding, apply_rotary_pos_emb
+from position_encoding.alibi.alibi import ALiBiPositionBias
+from position_encoding.learnable.learnable import LearnablePositionEncoding
 
 
 class TestSinusoidal:

@@ -10,8 +10,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from cnn.resnet import BasicBlock, Bottleneck, ResNet
-from cnn.vgg import VGGBlock, VGG
+from cnn.resnet.resnet import BasicBlock, Bottleneck, ResNet
+from cnn.vgg.vgg import VGGBlock, VGG
 
 
 class TestBasicBlock:

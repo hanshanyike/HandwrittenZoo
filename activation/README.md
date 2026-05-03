@@ -6,9 +6,9 @@
 
 | 文件 | 内容 |
 |------|------|
-| [activations.py](activations.py) + [activations.md](activations.md) | ReLU、GELU、Swish(SiLU) 激活函数从零实现 |
-| [swiglu.py](swiglu.py) + [swiglu.md](swiglu.md) | SwiGLU 门控激活及参数计数陷阱详解 |
-| [feed_forward.py](feed_forward.py) + [feed_forward.md](feed_forward.md) | 标准 FFN vs SwiGLU FFN 对比实现 |
+| [activations.py](activations/activations.py) + [activations.md](activations/activations.md) | ReLU、GELU、Swish(SiLU) 激活函数从零实现 |
+| [swiglu.py](swiglu/swiglu.py) + [swiglu.md](swiglu/swiglu.md) | SwiGLU 门控激活及参数计数陷阱详解 |
+| [feed_forward.py](feed_forward/feed_forward.py) + [feed_forward.md](feed_forward/feed_forward.md) | 标准 FFN vs SwiGLU FFN 对比实现 |
 
 ## 面试聚焦点
 
@@ -33,9 +33,9 @@
 
 ```bash
 cd d:\Code\Python_Workplace\HandwrittenZoo\activation
-python activations.py
-python swiglu.py
-python feed_forward.py
+python activations/activations.py
+python swiglu/swiglu.py
+python feed_forward/feed_forward.py
 ```
 
 ## 关键公式速查

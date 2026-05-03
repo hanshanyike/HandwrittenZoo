@@ -10,9 +10,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 import torch
 import pytest
 
-from activation.activations import ReLU, GELU, Swish
-from activation.swiglu import SwiGLU
-from activation.feed_forward import FeedForward
+from activation.activations.activations import ReLU, GELU, Swish
+from activation.swiglu.swiglu import SwiGLU
+from activation.feed_forward.feed_forward import FeedForward
 
 
 class TestReLU:
