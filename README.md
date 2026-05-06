@@ -1,6 +1,36 @@
 # HandwrittenZoo
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python">
+  <img src="https://img.shields.io/badge/PyTorch-1.12%2B-red.svg" alt="PyTorch">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/badge/Algorithms-50%2B-orange.svg" alt="Algorithms">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/hanshanyike/HandwrittenZoo?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/forks/hanshanyike/HandwrittenZoo?style=social" alt="Forks">
+  <img src="https://img.shields.io/github/issues/hanshanyike/HandwrittenZoo" alt="Issues">
+</p>
+
+<p align="center">
+  <strong>🔗 <a href="README.md">中文</a> | English (Coming Soon)</strong>
+</p>
+
+---
+
+
 HandwrittenZoo 是一个面向**算法工程师**与**大模型工程师**面试的深度学习核心算法手撕代码仓库。本仓库系统覆盖从经典网络到前沿大模型组件的完整技术栈，每个算法均提供**从零实现的 Python 代码** + **配套 Markdown 文档**，帮助面试者深入理解原理、快速备战高频考点。
+
+---
+
+<p align="center">
+  <a href="#目录结构">📁 目录结构</a> •
+  <a href="#面试重点提示">📝 面试重点</a> •
+  <a href="#如何运行">🚀 快速开始</a> •
+  <a href="#文件配对规范">📖 使用指南</a> •
+  <a href="#学习路线建议">🛤️ 学习路线</a>
+</p>
 
 ---
 
@@ -9,19 +39,20 @@ HandwrittenZoo 是一个面向**算法工程师**与**大模型工程师**面试
 ```
 HandwrittenZoo/
 ├── transformer/              # Transformer 架构全系列（原始 Transformer、BERT、GPT、LLaMA 等）
-├── attention/                # 注意力机制及其变体（MHA、MQA、GQA、FlashAttention、MLA 等）
-├── position_encoding/        # 位置编码（正弦/余弦、RoPE、ALiBi 等）
-├── normalization/            # 归一化层（LayerNorm、RMSNorm、BatchNorm 等）
-├── activation/               # 激活函数与前馈网络（SwiGLU、GELU、FFN 变体等）
-├── cnn/                      # 经典卷积网络（ResNet、VGG 等）
-├── rnn/                      # 循环网络（LSTM、GRU、BiLSTM 等）
-├── generative_model/         # 生成模型（VAE、GAN、Diffusion Model 等）
-├── rl/                       # 强化学习与对齐（PPO、DPO、GRPO、Reward Model 等）
-├── moe/                      # 混合专家模型（MoE、门控机制、负载均衡等）
-├── fine_tuning/              # 参数高效微调（LoRA、QLoRA、Prefix Tuning 等）
-├── inference_optimization/   # 推理优化（KV Cache、PageAttention、量化等）
-├── tokenization/             # 分词算法（BPE、WordPiece、SentencePiece 等）
-├── tests/                    # 单元测试与验证
+├── attention/                 # 注意力机制及其变体（MHA、MQA、GQA、FlashAttention、MLA 等）
+├── position_encoding/         # 位置编码（正弦/余弦、RoPE、ALiBi 等）
+├── normalization/             # 归一化层（LayerNorm、RMSNorm、BatchNorm 等）
+├── activation/                # 激活函数与前馈网络（SwiGLU、GELU、FFN 变体等）
+├── cnn/                       # 经典卷积网络（ResNet、VGG 等）
+├── rnn/                       # 循环网络（LSTM、GRU、BiLSTM 等）
+├── generative_model/          # 生成模型（VAE、GAN、Diffusion Model 等）
+├── rl/                        # 强化学习与对齐（PPO、DPO、GRPO、Reward Model 等）
+├── moe/                       # 混合专家模型（MoE、门控机制、负载均衡等）
+├── mamba/                     # 选择性状态空间模型（Mamba SSM，线性时间复杂度）
+├── fine_tuning/               # 参数高效微调（LoRA、QLoRA、Prefix Tuning 等）
+├── inference_optimization/    # 推理优化（KV Cache、PageAttention、量化、投机解码等）
+├── tokenization/              # 分词算法（BPE、WordPiece、SentencePiece 等）
+├── tests/                     # 单元测试与验证
 ├── requirements.txt          # Python 依赖
 └── README.md                 # 本文件
 ```
@@ -37,10 +68,11 @@ HandwrittenZoo/
 | 位置编码 | 高 | RoPE 旋转矩阵推导、ALiBi 外推性、长度外推问题 |
 | 归一化层 | 高 | LayerNorm vs RMSNorm、Pre-Norm vs Post-Norm、为什么大模型用 RMSNorm |
 | 激活与 FFN | 高 | SwiGLU 参数量陷阱、GELU 平滑性、各种激活函数对比 |
-| 推理优化 | 高 | KV Cache 原理、PageAttention 分页管理、量化对精度的影响 |
+| 推理优化 | 高 | KV Cache 原理、PageAttention 分页管理、量化对精度的影响、投机解码加速机制 |
 | 强化学习对齐 | 高 | PPO 裁剪目标、DPO 直接偏好优化、GRPO 组相对策略优化 |
-| 参数高效微调 | 中 | LoRA 低秩分解、QLoRA 量化 + LoRA、Prefix Tuning 原理 |
+| Mamba / SSM | 极高 | 选择性 SSM、线性复杂度、选择性扫描、与 Transformer 的区别 |
 | 混合专家模型 | 中高 | MoE 门控机制、Top-K 路由、负载均衡损失、Switch Transformer |
+| 参数高效微调 | 中 | LoRA 低秩分解、QLoRA 量化 + LoRA、Prefix Tuning 原理 |
 | 生成模型 | 中 | VAE 重参数化技巧、GAN 训练稳定性、Diffusion 前向加噪与反向去噪 |
 | 经典 CNN/RNN | 中 | 残差连接解决梯度消失、LSTM 门控机制、GRU 简化设计 |
 | 分词算法 | 中 | BPE 合并策略、WordPiece 似然目标、SentencePiece 无预分词优势 |

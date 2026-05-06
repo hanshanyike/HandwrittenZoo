@@ -9,6 +9,7 @@
 | [kv_cache.py](kv_cache/kv_cache.py) + [kv_cache.md](kv_cache/kv_cache.md) | KV Cache 机制：缓存历史 K/V 避免重复计算 | 高 — 所有 LLM 推理的基础 |
 | [page_attention.py](page_attention/page_attention.py) + [page_attention.md](page_attention/page_attention.md) | PageAttention 简化实现：分页式 KV Cache 管理 | 高 — vLLM 核心，显存碎片与共享 |
 | [quantization.py](quantization/quantization.py) + [quantization.md](quantization/quantization.md) | 基础量化：INT8/INT4 对称/非对称量化 | 高 — 模型压缩与部署必考 |
+| [speculative_decoding.py](speculative_decoding/speculative_decoding.py) + [speculative_decoding.md](speculative_decoding/speculative_decoding.md) | 投机解码：小模型草稿 + 大模型验证 | 极高 — 2024-2025 推理加速新范式 |
 
 ## 面试焦点速览
 
